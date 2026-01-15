@@ -1,44 +1,49 @@
-// main.js en CommonJS
 const express = require("express");
-const fs = require("fs");
-const path = require("path");
+const mongoose = require("mongoose");
 const cors = require("cors");
 
 const app = express();
-const PORT = 5000;
-
 app.use(cors());
 app.use(express.json());
 
-const DATA_PATH = path.join(__dirname, "data", "data.json");
+// Connexion à MongoDB
+// Remplace par ta vraie chaîne de connexion récupérée sur Atlas
+const MONGO_URI = "mongodb+srv://ruphin_db_user:tAYs99xv4ZgEJQjv@cluster0.p9jgdcq.mongodb.net/"; 
 
-app.get("/api/images", (req, res) => {
+mongoose.connect(MONGO_URI)
+  .then(() => console.log("Connecté à MongoDB"))
+  .catch(err => console.error("Erreur connexion mongo:", err));
+
+// Modèle de données
+const ImageSchema = new mongoose.Schema({
+  secure_url: String,
+  createdAt: { type: Date, default: Date.now }
+});
+const Image = mongoose.model("Image", ImageSchema);
+
+// ROUTES
+app.get("/api/images", async (req, res) => {
   try {
-    const rawData = fs.readFileSync(DATA_PATH, "utf-8");
-    const items = JSON.parse(rawData);
-    res.json(items);
+    const images = await Image.find().sort({ createdAt: -1 }); // Les plus récentes d'abord
+    res.json(images);
   } catch (err) {
-    res.json([]);
+    res.status(500).json([]);
   }
-}); 
-
-app.post("/api/images", (req, res) => {
-  const { secure_url } = req.body;
-  if (!secure_url) return res.status(400).json({ error: "secure_url manquant" });
-
-  let items = [];
-  try {
-    const rawData = fs.readFileSync(DATA_PATH, "utf-8");
-    items = JSON.parse(rawData);
-  } catch (err) {
-    items = [];
-  }
-
-  items.unshift({ secure_url });
-  fs.writeFileSync(DATA_PATH, JSON.stringify(items, null, 2), "utf-8");
-  res.json({ success: true, secure_url });
 });
 
-app.listen(5000, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.post("/api/images", async (req, res) => {
+  try {
+    const { secure_url } = req.body;
+    if (!secure_url) return res.status(400).json({ error: "URL manquante" });
+
+    const newImage = new Image({ secure_url });
+    await newImage.save();
+
+    res.json({ success: true, secure_url });
+  } catch (err) {
+    res.status(500).json({ success: false, message: "Erreur DB" });
+  }
 });
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Serveur sur port ${PORT}`));
