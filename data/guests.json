@@ -1,1 +1,182 @@
-[]
+[
+  {
+    "id": 1767800000001,
+    "name": "Jean Mbarga",
+    "phone": "237690111001",
+    "is_attending": true,
+    "guests_count": 2,
+    "message": "Toutes mes félicitations pour votre union. Que l’amour et la joie vous accompagnent chaque jour.",
+    "created_at": "2026-01-06T18:00:00.001Z"
+  },
+  {
+    "id": 1767800000002,
+    "name": "Marie Ndzié",
+    "phone": "237690111002",
+    "is_attending": false,
+    "guests_count": 1,
+    "message": "Même de loin, je vous souhaite une vie remplie de bonheur et de bénédictions.",
+    "created_at": "2026-01-06T18:01:00.002Z"
+  },
+  {
+    "id": 1767800000003,
+    "name": "Pauline Essomba",
+    "phone": "237690111003",
+    "is_attending": true,
+    "guests_count": 1,
+    "message": "Très heureuse de célébrer ce grand jour avec vous. Que votre amour grandisse chaque jour.",
+    "created_at": "2026-01-06T18:02:00.003Z"
+  },
+  {
+    "id": 1767800000004,
+    "name": "Samuel Ndzi",
+    "phone": "237690111004",
+    "is_attending": false,
+    "guests_count": 2,
+    "message": "Félicitations aux mariés ! Je vous souhaite une union solide et pleine de paix.",
+    "created_at": "2026-01-06T18:03:00.004Z"
+  },
+  {
+    "id": 1767800000005,
+    "name": "Clarisse Abena",
+    "phone": "237690111005",
+    "is_attending": true,
+    "guests_count": 3,
+    "message": "Quel bonheur de vous voir unir vos vies. Tous mes vœux de réussite et d’amour.",
+    "created_at": "2026-01-06T18:04:00.005Z"
+  },
+  {
+    "id": 1767800000006,
+    "name": "Didier Nkom",
+    "phone": "237690111006",
+    "is_attending": false,
+    "guests_count": 1,
+    "message": "Recevez mes sincères félicitations. Que Dieu guide chacun de vos pas.",
+    "created_at": "2026-01-06T18:05:00.006Z"
+  },
+  {
+    "id": 1767800000007,
+    "name": "Vanessa Biloa",
+    "phone": "237690111007",
+    "is_attending": true,
+    "guests_count": 2,
+    "message": "C’est un immense plaisir de partager ce moment unique avec vous. Vive les mariés !",
+    "created_at": "2026-01-06T18:06:00.007Z"
+  },
+  {
+    "id": 1767800000008,
+    "name": "Eric Ndzié",
+    "phone": "237690111008",
+    "is_attending": false,
+    "guests_count": 1,
+    "message": "Je vous souhaite une vie conjugale remplie de rires, d’amour et de succès.",
+    "created_at": "2026-01-06T18:07:00.008Z"
+  },
+  {
+    "id": 1767800000009,
+    "name": "Aline Mekongo",
+    "phone": "237690111009",
+    "is_attending": true,
+    "guests_count": 1,
+    "message": "Félicitations pour ce magnifique engagement. Que votre foyer soit béni.",
+    "created_at": "2026-01-06T18:08:00.009Z"
+  },
+  {
+    "id": 1767800000010,
+    "name": "Bruno Ndzi",
+    "phone": "237690111010",
+    "is_attending": false,
+    "guests_count": 2,
+    "message": "Tous mes vœux de bonheur aux nouveaux mariés. Profitez pleinement de cette nouvelle aventure.",
+    "created_at": "2026-01-06T18:09:00.010Z"
+  },
+  {
+    "id": 1767800000011,
+    "name": "Cynthia Ondoa",
+    "phone": "237690111011",
+    "is_attending": true,
+    "guests_count": 2,
+    "message": "Je suis honorée d’assister à votre union. Que votre amour soit éternel.",
+    "created_at": "2026-01-06T18:10:00.011Z"
+  },
+  {
+    "id": 1767800000012,
+    "name": "Hervé Abessolo",
+    "phone": "237690111012",
+    "is_attending": false,
+    "guests_count": 1,
+    "message": "Félicitations ! Que votre mariage soit une source infinie de joie.",
+    "created_at": "2026-01-06T18:11:00.012Z"
+  },
+  {
+    "id": 1767800000013,
+    "name": "Estelle Ndzi",
+    "phone": "237690111013",
+    "is_attending": true,
+    "guests_count": 3,
+    "message": "Quel beau couple ! Je vous souhaite une vie pleine de complicité et d’amour.",
+    "created_at": "2026-01-06T18:12:00.013Z"
+  },
+  {
+    "id": 1767800000014,
+    "name": "Patrick Ndzié",
+    "phone": "237690111014",
+    "is_attending": false,
+    "guests_count": 1,
+    "message": "Recevez mes félicitations les plus sincères pour votre mariage.",
+    "created_at": "2026-01-06T18:13:00.014Z"
+  },
+  {
+    "id": 1767800000015,
+    "name": "Nadine Mballa",
+    "phone": "237690111015",
+    "is_attending": true,
+    "guests_count": 2,
+    "message": "Très heureuse pour vous deux. Que votre union soit couronnée de succès.",
+    "created_at": "2026-01-06T18:14:00.015Z"
+  },
+  {
+    "id": 1767800000016,
+    "name": "Joël Ndzi",
+    "phone": "237690111016",
+    "is_attending": false,
+    "guests_count": 2,
+    "message": "Même absent, je vous envoie tout mon soutien et mes félicitations.",
+    "created_at": "2026-01-06T18:15:00.016Z"
+  },
+  {
+    "id": 1767800000017,
+    "name": "Sandrine Abanda",
+    "phone": "237690111017",
+    "is_attending": true,
+    "guests_count": 1,
+    "message": "Félicitations aux mariés ! Que cette journée marque le début d’un bonheur infini.",
+    "created_at": "2026-01-06T18:16:00.017Z"
+  },
+  {
+    "id": 1767800000018,
+    "name": "Luc Ndzié",
+    "phone": "237690111018",
+    "is_attending": false,
+    "guests_count": 1,
+    "message": "Je vous souhaite une vie conjugale remplie de paix et d’amour.",
+    "created_at": "2026-01-06T18:17:00.018Z"
+  },
+  {
+    "id": 1767800000019,
+    "name": "Florence Ndzi",
+    "phone": "237690111019",
+    "is_attending": true,
+    "guests_count": 2,
+    "message": "Quel plaisir de célébrer votre amour. Tous mes vœux de bonheur.",
+    "created_at": "2026-01-06T18:18:00.019Z"
+  },
+  {
+    "id": 1767800000020,
+    "name": "Arnaud Mvogo",
+    "phone": "237690111020",
+    "is_attending": false,
+    "guests_count": 1,
+    "message": "Félicitations pour cette belle union. Que votre avenir soit radieux.",
+    "created_at": "2026-01-06T18:19:00.020Z"
+  }
+]
