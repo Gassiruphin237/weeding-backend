@@ -39,6 +39,6 @@ app.post("/api/images", (req, res) => {
   res.json({ success: true, secure_url });
 });
 
-app.listen(PORT, () => {
+app.listen(5000, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
