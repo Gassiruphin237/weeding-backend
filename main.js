@@ -20,7 +20,7 @@ app.get("/api/images", (req, res) => {
   } catch (err) {
     res.json([]);
   }
-});
+}); 
 
 app.post("/api/images", (req, res) => {
   const { secure_url } = req.body;
