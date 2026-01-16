@@ -6,6 +6,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use((req, res, next) => {
+  res.set('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+  res.set('Pragma', 'no-cache');
+  res.set('Expires', '0');
+  res.set('Surrogate-Control', 'no-store');
+  next();
+});
 // Connexion à MongoDB
 // Remplace par ta vraie chaîne de connexion récupérée sur Atlas
 const MONGO_URI = "mongodb+srv://ruphin_db_user:tAYs99xv4ZgEJQjv@cluster0.p9jgdcq.mongodb.net/"; 
@@ -20,7 +27,7 @@ const ImageSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now }
 });
 const Image = mongoose.model("Image", ImageSchema);
-
+ 
 // ROUTES
 app.get("/api/images", async (req, res) => {
   try {
